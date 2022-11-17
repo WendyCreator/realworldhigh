@@ -1,18 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import Layouts from '../Components/Layouts'
-
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Result Calculator</title>
-        <meta name="description" content="Designed by Wendy Creator" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -21,38 +14,37 @@ export default function Home() {
 
         <p className={styles.description}>
           Login to get started{' '}
-          
-          <Link href='login/' className='bg-gray-400 p-3 rounded shadow-sm text-bold'>Login</Link>
+          <code className='bg-gray-400 p-3 rounded shadow-sm text-bold'>Login</code>
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={`${styles.card} shadow-sm hover:shadow-lg`}>
-            <h2>Check Result &rarr;</h2>
-            <p>You can Check different Student results</p>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h2>Documentation &rarr;</h2>
+            <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={`${styles.card} shadow-sm hover:shadow-lg`}>
-            <h2>Report Student &rarr;</h2>
-            <p>You can report student's activities</p>
+          <a href="https://nextjs.org/learn" className={styles.card}>
+            <h2>Learn &rarr;</h2>
+            <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
 
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={`${styles.card} shadow-sm hover:shadow-lg`}
+            className={styles.card}
           >
-            <h2>Calculate CGPA &rarr;</h2>
-            <p>You can calculate student Cummlative Grade Point</p>
+            <h2>Examples &rarr;</h2>
+            <p>Discover and deploy boilerplate example Next.js projects.</p>
           </a>
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
-            className={`${styles.card} shadow-sm hover:shadow-lg`}
+            className={styles.card}
           >
-            <h2>Send Result &rarr;</h2>
+            <h2>Deploy &rarr;</h2>
             <p>
-              You can send Student results to student's guardian
+              Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
         </div>
@@ -73,4 +65,3 @@ export default function Home() {
     </div>
   )
 }
-
