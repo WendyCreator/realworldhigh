@@ -51,7 +51,8 @@ const Registerrlt = () => {
     y++
   }
   setCae(CA)
-},  [exam, CA])
+}, [exam, CA, x, y])
+   
 
 
 
