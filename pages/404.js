@@ -5,7 +5,7 @@ import {useRouter} from 'next/router'
 
 
 
-const pagenotfound = () => {
+const Pagenotfound = () => {
     const router = useRouter();
     // const [time, setTime] = useState(5)
 
@@ -16,11 +16,10 @@ const pagenotfound = () => {
 
     useEffect(
        ()=>{
-        setTimeout(
-            goHome,
-            5000) 
-       }, []
+        setTimeout(goHome, 5000) 
+       }
     )
+
   return (
     <>
          <div className='sidebar h-sreen bg-purple-50 w-full p-10 item-center flex flex-col justify-center'>
@@ -33,7 +32,7 @@ const pagenotfound = () => {
   )
 }
 
-export default pagenotfound
+export default Pagenotfound
 
 // pagenotfound.getLayout = (pages)=>{
 //     return(

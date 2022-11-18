@@ -7,7 +7,7 @@ import InputField from '../../Components/InputField'
 
 
 
-const registercrs = () => {
+const Registercrs = () => {
   return (
     <>
           <motion.div className='sidebar h-sreen bg-purple-50 w-3/4'
@@ -30,9 +30,9 @@ const registercrs = () => {
   )
 }
 
-export default registercrs
+export default Registercrs
 
-registercrs.getLayout = (pages)=>{
+Registercrs.getLayout = (pages)=>{
   return(
    <Layouts>
    {pages}

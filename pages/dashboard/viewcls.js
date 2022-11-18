@@ -8,7 +8,7 @@ import useSWR from 'swr'
 
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
-const viewcls = () => {
+const Viewcls = () => {
 
   const [students, setStudents] = useState([])
   let num = 1
@@ -83,9 +83,9 @@ const viewcls = () => {
   )
 }
 
-export default viewcls
+export default Viewcls
 
-viewcls.getLayout = (pages)=>{
+Viewcls.getLayout = (pages)=>{
     return(
      <Layouts>
      {pages}

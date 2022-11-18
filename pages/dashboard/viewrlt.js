@@ -11,7 +11,7 @@ import useSWR from 'swr'
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
-const viewrlt = () => {
+const Viewrlt = () => {
   const { data, error } = useSWR('/api/getData', fetcher)
 
   const [theScore, setTheScore] = useState([])
@@ -185,9 +185,9 @@ const viewrlt = () => {
   )
 }
 
-export default viewrlt
+export default Viewrlt
 
-viewrlt.getLayout = (pages)=>{
+Viewrlt.getLayout = (pages)=>{
     return(
      <Layouts>
      {pages}

@@ -3,7 +3,7 @@ import {auth} from '../firebase'
 import { signInWithEmailAndPassword } from "firebase/auth";
 import {useRouter} from 'next/router'
 
-const index = () => {
+const Index = () => {
   const [error, setError] = useState(false)
   const router = useRouter()
 
@@ -61,4 +61,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index

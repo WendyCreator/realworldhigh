@@ -12,7 +12,7 @@ import axios from 'axios'
 
 
 
-const registerstd = (props) => {
+const Registerstd = (props) => {
   const allCourses = ['Mathematics', 'English Languange', 'Physics', 'Chemistry', 'Biology']
 
   const [message, setMessage] = useState(false)
@@ -87,9 +87,9 @@ const registerstd = (props) => {
   )
 }
 
-export default registerstd
+export default Registerstd
 
-registerstd.getLayout = (pages)=>{
+Registerstd.getLayout = (pages)=>{
     return(
      <Layouts>
      {pages}

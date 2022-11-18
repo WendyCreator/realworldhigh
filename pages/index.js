@@ -29,11 +29,12 @@ export default function Home() {
           <a href="https://nextjs.org/docs" className={`${styles.card} shadow-sm hover:shadow-lg`}>
             <h2>Check Result &rarr;</h2>
             <p>You can Check different Student results</p>
+           
           </a>
 
           <a href="https://nextjs.org/learn" className={`${styles.card} shadow-sm hover:shadow-lg`}>
             <h2>Report Student &rarr;</h2>
-            <p>You can report student's activities</p>
+            {/* <p>You can report student's activities</p> */}
           </a>
 
           <a
@@ -51,9 +52,9 @@ export default function Home() {
             className={`${styles.card} shadow-sm hover:shadow-lg`}
           >
             <h2>Send Result &rarr;</h2>
-            <p>
+            {/* <p>
               You can send Student results to student's guardian
-            </p>
+            </p> */}
           </a>
         </div>
       </main>

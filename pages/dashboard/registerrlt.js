@@ -4,7 +4,7 @@ import Layouts from '../../Components/Layouts'
 import {motion} from 'framer-motion'
 import InputField from '../../Components/InputField'
 import SelectStd from '../../Components/SelectStd'
-import Classes from '../../Components/Classes,'
+import Classes from '../../Components/Classes'
 import Select from '../../Components/Select'
 import studentdata from '../../database/studentdata'
 import Course from '../../Components/Course'
@@ -17,7 +17,7 @@ import useSWR from 'swr'
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
-const registerrlt = () => {
+const Registerrlt = () => {
   const [students, setStudents] = useState(studentdata)
   const [records, setRecords] = useState({})
   const [message, setMessage] = useState(false)
@@ -51,7 +51,7 @@ const registerrlt = () => {
     y++
   }
   setCae(CA)
-}, [])
+},  [exam, CA])
 
 
 
@@ -183,9 +183,9 @@ const registerrlt = () => {
   )
 }
 
-export default registerrlt
+export default Registerrlt
 
-registerrlt.getLayout = (pages)=>{
+Registerrlt.getLayout = (pages)=>{
     return(
      <Layouts>
      {pages}

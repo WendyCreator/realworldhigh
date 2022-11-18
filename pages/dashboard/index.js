@@ -19,34 +19,33 @@ const Index = () => {
         </p>
 
         <div className='flex flex-wrap justify-center'>
-          <a href="https://nextjs.org/docs" className={`w-1/3 h-36 block p-4 m-2 text-xl shadow-sm hover:shadow-lg`}>
-            <h2>Check Result &rarr;</h2>
+          <a className={`w-1/3 h-36 block p-4 m-2 text-xl shadow-sm hover:shadow-lg`}>
+            <h2>Check Result</h2>
             <p>You can Check different Student results</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={`w-1/3 h-36 block p-4 m-2 text-xl shadow-sm hover:shadow-lg`}>
-            <h2>Report Student &rarr;</h2>
-            <p>You can report student's activities</p>
+          <a className={`w-1/3 h-36 block p-4 m-2 text-xl shadow-sm hover:shadow-lg`}>
+            <h2>Report Student</h2>
+            {/* <p>You can report student's activities</p> */}
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
             className={`w-1/3 h-36 block p-4 m-2 text-xl shadow-sm hover:shadow-lg`}
           >
-            <h2>Calculate CGPA &rarr;</h2>
+            <h2>Calculate CGPA</h2>
             <p>You can calculate student Cummlative Grade Point</p>
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
             className={`w-1/3 h-36 block p-4 m-2 text-xl shadow-sm hover:shadow-lg`}
           >
-            <h2>Send Result &rarr;</h2>
-            <p>
+            {/* &rarr; */}
+            <h2>Send Result </h2>
+            {/* <p>
               You can send Student results to student's guardian
-            </p>
+            </p> */}
           </a>
 
 

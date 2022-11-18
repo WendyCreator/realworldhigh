@@ -12,7 +12,7 @@ const Classes = ({labelName}) => {
        {
         studentdata.map(data=>{
             return (
-                <option>{data.fullname}</option>
+                <option key={data.id}>{data.fullname}</option>
             )
         })
        }

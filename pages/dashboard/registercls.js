@@ -4,7 +4,7 @@ import Layouts from '../../Components/Layouts'
 import {motion} from 'framer-motion'
 
 
-const registercls = () => {
+const Registercls = () => {
   return (
     <>
          <motion.div className='sidebar h-sreen bg-purple-50 w-3/4'
@@ -19,9 +19,9 @@ const registercls = () => {
   )
 }
 
-export default registercls
+export default Registercls
 
-registercls.getLayout = (pages)=>{
+Registercls.getLayout = (pages)=>{
     return(
      <Layouts>
      {pages}
